@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		624805CF1E31CFFC0094FC0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805CE1E31CFFC0094FC0E /* AppDelegate.swift */; };
-		624805D11E31CFFC0094FC0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805D01E31CFFC0094FC0E /* ViewController.swift */; };
+		624805D11E31CFFC0094FC0E /* SayMyNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805D01E31CFFC0094FC0E /* SayMyNameVC.swift */; };
 		624805D41E31CFFC0094FC0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624805D21E31CFFC0094FC0E /* Main.storyboard */; };
 		624805D71E31CFFC0094FC0E /* Say_My_Name.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 624805D51E31CFFC0094FC0E /* Say_My_Name.xcdatamodeld */; };
 		624805D91E31CFFC0094FC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624805D81E31CFFC0094FC0E /* Assets.xcassets */; };
 		624805DC1E31CFFC0094FC0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624805DA1E31CFFC0094FC0E /* LaunchScreen.storyboard */; };
+		624805E71E31D0720094FC0E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805E61E31D0710094FC0E /* Person.swift */; };
+		624805ED1E31D2D20094FC0E /* SignUpInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805EC1E31D2D20094FC0E /* SignUpInVC.swift */; };
+		624805EF1E31D2FF0094FC0E /* WhatsMyNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805EE1E31D2FF0094FC0E /* WhatsMyNameVC.swift */; };
+		624805F11E31D3140094FC0E /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805F01E31D3140094FC0E /* ListVC.swift */; };
+		624805F31E31D33D0094FC0E /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805F21E31D33D0094FC0E /* InfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		624805CB1E31CFFC0094FC0E /* Say My Name.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Say My Name.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624805CE1E31CFFC0094FC0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		624805D01E31CFFC0094FC0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		624805D01E31CFFC0094FC0E /* SayMyNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayMyNameVC.swift; sourceTree = "<group>"; };
 		624805D31E31CFFC0094FC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		624805D61E31CFFC0094FC0E /* Say_My_Name.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Say_My_Name.xcdatamodel; sourceTree = "<group>"; };
 		624805D81E31CFFC0094FC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624805DB1E31CFFC0094FC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624805DD1E31CFFC0094FC0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624805E61E31D0710094FC0E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		624805EC1E31D2D20094FC0E /* SignUpInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInVC.swift; sourceTree = "<group>"; };
+		624805EE1E31D2FF0094FC0E /* WhatsMyNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsMyNameVC.swift; sourceTree = "<group>"; };
+		624805F01E31D3140094FC0E /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		624805F21E31D33D0094FC0E /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		624805CD1E31CFFC0094FC0E /* Say My Name */ = {
 			isa = PBXGroup;
 			children = (
+				624805E51E31D0330094FC0E /* Model */,
+				624805E41E31D02B0094FC0E /* View */,
+				624805E31E31D01F0094FC0E /* Controller */,
 				624805CE1E31CFFC0094FC0E /* AppDelegate.swift */,
-				624805D01E31CFFC0094FC0E /* ViewController.swift */,
 				624805D21E31CFFC0094FC0E /* Main.storyboard */,
-				624805D81E31CFFC0094FC0E /* Assets.xcassets */,
 				624805DA1E31CFFC0094FC0E /* LaunchScreen.storyboard */,
+				624805D81E31CFFC0094FC0E /* Assets.xcassets */,
 				624805DD1E31CFFC0094FC0E /* Info.plist */,
 				624805D51E31CFFC0094FC0E /* Say_My_Name.xcdatamodeld */,
 			);
 			path = "Say My Name";
+			sourceTree = "<group>";
+		};
+		624805E31E31D01F0094FC0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				624805D01E31CFFC0094FC0E /* SayMyNameVC.swift */,
+				624805EC1E31D2D20094FC0E /* SignUpInVC.swift */,
+				624805EE1E31D2FF0094FC0E /* WhatsMyNameVC.swift */,
+				624805F01E31D3140094FC0E /* ListVC.swift */,
+				624805F21E31D33D0094FC0E /* InfoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		624805E41E31D02B0094FC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		624805E51E31D0330094FC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				624805E61E31D0710094FC0E /* Person.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624805D11E31CFFC0094FC0E /* ViewController.swift in Sources */,
+				624805F11E31D3140094FC0E /* ListVC.swift in Sources */,
+				624805D11E31CFFC0094FC0E /* SayMyNameVC.swift in Sources */,
+				624805EF1E31D2FF0094FC0E /* WhatsMyNameVC.swift in Sources */,
 				624805CF1E31CFFC0094FC0E /* AppDelegate.swift in Sources */,
+				624805F31E31D33D0094FC0E /* InfoVC.swift in Sources */,
+				624805E71E31D0720094FC0E /* Person.swift in Sources */,
 				624805D71E31CFFC0094FC0E /* Say_My_Name.xcdatamodeld in Sources */,
+				624805ED1E31D2D20094FC0E /* SignUpInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
