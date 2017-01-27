@@ -14,11 +14,19 @@ class Person {
     private var _height: String!
     private var _build: String!
     private var _hairColor: String!
-    private var _eyeColor: String!
+    private var _birthday: String!
     private var _gender: String!
     private var _race: String!
     private var _phoneNumber: String!
     private var _email: String!
+    private var _occupation: String!
+    private var _employer: String!
+    private var _likes: [String]!
+    private var _dislikes: [String]!
+    private var _notableEvents: [String]!
+    private var _spouse: [String:[String:String]]!
+    private var _children: [String:[String:String]]!
+    
     
     var name: String {
         get {
@@ -60,11 +68,11 @@ class Person {
         }
     }
     
-    var eyeColor: String {
+    var birthday: String {
         get {
-            return _eyeColor
+            return _birthday
         } set {
-            _eyeColor = newValue
+            _birthday = newValue
         }
     }
     
@@ -100,17 +108,79 @@ class Person {
         }
     }
     
-    init(name: String, meetingPlace: String, height: String, build: String, hairColor: String, eyeColor: String, gender: String, race: String, phoneNumber: String, email: String) {
+    var occupation: String {
+        get {
+            return _occupation
+        } set {
+            _occupation = newValue
+        }
+    }
+    
+    var employer: String {
+        get {
+            return _employer
+        } set {
+            _employer = newValue
+        }
+    }
+    
+    var likes: [String] {
+        get {
+            return _likes
+        } set {
+            _likes = newValue
+        }
+    }
+    
+    var dislikes: [String] {
+        get {
+            return _dislikes
+        } set {
+            _dislikes = newValue
+        }
+    }
+    
+    var notableEvents: [String] {
+        get {
+            return _notableEvents
+        } set {
+            _notableEvents = newValue
+        }
+    }
+    
+    var spouse: [String:[String:String]] {
+        get {
+            return _spouse
+        } set {
+            _spouse = newValue
+        }
+    }
+    
+    var children: [String:[String:String]] {
+        get {
+            return _children
+        } set {
+            _children = newValue
+        }
+    }
+    
+    
+    init(name: String, meetingPlace: String, height: String, build: String, hairColor: String, birthday: String, gender: String, race: String, phoneNumber: String, email: String, likes: [String], dislikes: [String], notableEvents: [String], spouse: [String:[String:String]], children: [String:[String:String]]) {
         self._name = name
         self._meetingPlace = meetingPlace
         self._height = height
         self._build = build
         self._hairColor = hairColor
-        self._eyeColor = eyeColor
+        self._birthday = birthday
         self._gender = gender
         self._race = race
         self._phoneNumber = phoneNumber
         self._email = email
+        self._likes = likes
+        self._dislikes = dislikes
+        self._notableEvents = notableEvents
+        self._spouse = spouse
+        self._children = children
     }
     
     
