@@ -8,25 +8,40 @@
 
 import UIKit
 
-class WhatsMyNameVC: UIViewController {
+class WhatsMyNameVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var contactList: UITableView!
+    
+    var people : [Contact] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        contactList.dataSource = self
+        contactList.delegate = self
      
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do{
+            people = try context.fetch(Contact.fetchRequest())
+            contactList.reloadData()
+        } catch {
+        }
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int {
+        return people.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        let person = people[indexPath.row]
+        cell.textLabel?.text = person.name
+        cell.imageView?.image = UIImage(data: person.image as! Data)
+        return cell
     }
 
 
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
