@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		623695C01E4025EE00530FCD /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623695BF1E4025EE00530FCD /* ContactCell.swift */; };
 		624805CF1E31CFFC0094FC0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805CE1E31CFFC0094FC0E /* AppDelegate.swift */; };
 		624805D11E31CFFC0094FC0E /* SayMyNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805D01E31CFFC0094FC0E /* SayMyNameVC.swift */; };
 		624805D41E31CFFC0094FC0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624805D21E31CFFC0094FC0E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		623695BF1E4025EE00530FCD /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		624805CB1E31CFFC0094FC0E /* Say My Name.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Say My Name.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624805CE1E31CFFC0094FC0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624805D01E31CFFC0094FC0E /* SayMyNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayMyNameVC.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		624805E41E31D02B0094FC0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				623695BF1E4025EE00530FCD /* ContactCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623695C01E4025EE00530FCD /* ContactCell.swift in Sources */,
 				624805F11E31D3140094FC0E /* ListVC.swift in Sources */,
 				624805D11E31CFFC0094FC0E /* SayMyNameVC.swift in Sources */,
 				624805EF1E31D2FF0094FC0E /* WhatsMyNameVC.swift in Sources */,
@@ -352,6 +356,7 @@
 				624805E21E31CFFC0094FC0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
