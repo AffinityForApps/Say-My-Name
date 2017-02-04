@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     
     @IBOutlet weak var personPicture: UIImageView!
@@ -63,10 +63,11 @@ class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         sayMyNameScroll.contentSize = CGSize(width: personForm.frame.size.width, height: personForm.frame.size.height + 20)
     }
-    
     
 
     @IBAction func addEditTapped(_ sender: Any) {
