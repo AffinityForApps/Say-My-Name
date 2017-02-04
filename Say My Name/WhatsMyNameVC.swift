@@ -35,20 +35,11 @@ class WhatsMyNameVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as? ContactCell {
-            
-            let person = people[indexPath.row]
-            
-            cell.updateUI(person: person)
-            
-            return cell
-        } else {
-            
-            return UITableViewCell()
-            
-        }
-        
-        
+        let cell = UITableViewCell()
+        let person = people[indexPath.row]
+        cell.textLabel?.text = person.name
+        cell.imageView?.image = UIImage(data: person.image as! Data)
+        return cell
     }
 
 
