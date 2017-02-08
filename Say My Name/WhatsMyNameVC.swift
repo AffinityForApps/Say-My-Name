@@ -46,6 +46,15 @@ class WhatsMyNameVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return people.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let person = people[indexPath.row]
+        performSegue(withIdentifier: "contactSegue", sender: person)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! InfoVC
+        nextVC.person = sender as? Contact
+    }
+
 
    
     

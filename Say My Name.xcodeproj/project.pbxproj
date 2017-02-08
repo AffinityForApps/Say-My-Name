@@ -20,6 +20,7 @@
 		624805F31E31D33D0094FC0E /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624805F21E31D33D0094FC0E /* InfoVC.swift */; };
 		62AFFBFE1E459E7A004B6C91 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFFBFD1E459E7A004B6C91 /* ContactCell.swift */; };
 		62AFFC001E45A1BF004B6C91 /* ContactCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFFBFF1E45A1BF004B6C91 /* ContactCellImage.swift */; };
+		62AFFC021E49E42E004B6C91 /* ContactImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFFC011E49E42E004B6C91 /* ContactImage.swift */; };
 		E98EE1BAC932D9F6820FC7D7 /* Pods_Say_My_Name.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6851D420800F13F7ADD55D6B /* Pods_Say_My_Name.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		624805F21E31D33D0094FC0E /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		62AFFBFD1E459E7A004B6C91 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		62AFFBFF1E45A1BF004B6C91 /* ContactCellImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellImage.swift; sourceTree = "<group>"; };
+		62AFFC011E49E42E004B6C91 /* ContactImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactImage.swift; sourceTree = "<group>"; };
 		6851D420800F13F7ADD55D6B /* Pods_Say_My_Name.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Say_My_Name.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF47AA4E622E335104A1F19A /* Pods-Say My Name.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Say My Name.release.xcconfig"; path = "Pods/Target Support Files/Pods-Say My Name/Pods-Say My Name.release.xcconfig"; sourceTree = "<group>"; };
 		D42567C6226D4F8C41A6A7E0 /* Pods-Say My Name.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Say My Name.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Say My Name/Pods-Say My Name.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				62AFFBFD1E459E7A004B6C91 /* ContactCell.swift */,
 				62AFFBFF1E45A1BF004B6C91 /* ContactCellImage.swift */,
+				62AFFC011E49E42E004B6C91 /* ContactImage.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				624805E71E31D0720094FC0E /* Person.swift in Sources */,
 				624805D71E31CFFC0094FC0E /* Say_My_Name.xcdatamodeld in Sources */,
 				624805ED1E31D2D20094FC0E /* SignUpInVC.swift in Sources */,
+				62AFFC021E49E42E004B6C91 /* ContactImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
