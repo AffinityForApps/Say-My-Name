@@ -54,6 +54,12 @@ class InfoVC: UIViewController {
     @IBAction func emailButtonPressed(_ sender: Any) {
     }
     
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func editButtonPressed(_ sender: Any) {
+    }
 
 
 }

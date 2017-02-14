@@ -111,9 +111,9 @@ class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
         person.employer = employerTextField.text
         person.likes = likesTextView.text
         person.dislikes = dislikesTextView.text
-        person.notableEvents = notableEventsTextView.text
+        person.notes = notableEventsTextView.text
         person.spouse = spouseTextField.text
-        person.children = childrenTextView.text
+        person.relatedContact = childrenTextView.text
         
         //Clear fields
         

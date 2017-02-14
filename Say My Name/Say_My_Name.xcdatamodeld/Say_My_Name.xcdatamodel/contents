@@ -3,7 +3,6 @@
     <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
         <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="build" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="children" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dislikes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="employer" optional="YES" attributeType="String" syncable="YES"/>
@@ -14,10 +13,11 @@
         <attribute name="likes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="meetingPlace" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="notableEvents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="occupation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="relatedContact" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="spouse" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
