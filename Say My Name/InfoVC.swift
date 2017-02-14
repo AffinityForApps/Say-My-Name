@@ -15,9 +15,7 @@ class InfoVC: UIViewController {
     
     @IBOutlet weak var contactPicture: ContactImage!
     
-    @IBOutlet weak var phoneNumberButton: UIButton!
-    
-    @IBOutlet weak var emailButton: UIButton!
+    @IBOutlet weak var editPhotoButton: UIButton!
     
     var imagePicker = UIImagePickerController()
     var person : Contact? = nil
@@ -26,30 +24,34 @@ class InfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        editPhotoButton.isHidden = true
+        
         if person != nil {
             contactPicture.image = UIImage(data: person!.image as! Data)
             nameLabel.text = person!.name
-            phoneNumberButton.setTitle(person!.phoneNumber, for: .normal)
-            emailButton.setTitle(person!.email, for: .normal)
+            
         } else {
             contactPicture.image = #imageLiteral(resourceName: "DefaultPicture")
             nameLabel.text = "Contact Name"
-            phoneNumberButton.setTitle("555-555-5555", for: .normal)
-            emailButton.setTitle("person@internet.com", for: .normal)
+            
         }
         
     }
     
-
-    @IBAction func phoneNumberButtonPressed(_ sender: Contact) {
+    @IBAction func callButtonPressed(_ sender: Any) {
+        
         let url = URL(string: "tel://713-724-8726")
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(url! as URL)
-            }
+        if url != nil {
+            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+        } else {
+            print("url is nil")
+        }
         
     }
+    
+    @IBAction func textButtonPressed(_ sender: Any) {
+    }
+ 
     
     @IBAction func emailButtonPressed(_ sender: Any) {
     }
