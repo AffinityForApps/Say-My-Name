@@ -51,7 +51,7 @@ class WhatsMyNameVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         performSegue(withIdentifier: "contactSegue", sender: person)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! InfoTwoVC
+        let nextVC = segue.destination as! InfoVC
         nextVC.person = sender as? Contact
     }
 

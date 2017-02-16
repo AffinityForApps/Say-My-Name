@@ -11,9 +11,6 @@ import UIKit
 class InfoTwoVC: UITableViewController {
     
     
-    @IBOutlet weak var contactNameLabel: UILabel!
-
-    @IBOutlet weak var contactPicture: ContactImage!
     
     @IBOutlet weak var phoneNumberLabel: UILabel!
     
@@ -57,8 +54,6 @@ class InfoTwoVC: UITableViewController {
         super.viewDidLoad()
         
         if person != nil {
-            contactPicture.image = UIImage(data: person!.image as! Data)
-            contactNameLabel.text = person!.name
             phoneNumberForAction = person!.phoneNumber
             emailForAction = person!.email
             phoneNumberLabel.text = person!.phoneNumber
@@ -78,8 +73,6 @@ class InfoTwoVC: UITableViewController {
             notesTextView.text = person!.notes
             url = URL(string: "tel://\(person!.phoneNumber)")
         } else {
-            contactPicture.image = #imageLiteral(resourceName: "DefaultPicture")
-            contactNameLabel.text = "Contact Name"
             phoneNumberLabel.isHidden = true
             emailLabel.isHidden = true
             occupationLabel.isHidden = true

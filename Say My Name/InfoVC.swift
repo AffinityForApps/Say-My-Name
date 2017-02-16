@@ -17,6 +17,12 @@ class InfoVC: UIViewController {
     
     @IBOutlet weak var editPhotoButton: UIButton!
     
+    @IBOutlet weak var emailButton: UIButton!
+    
+    @IBOutlet weak var textButton: UIButton!
+    
+    @IBOutlet weak var callButton: UIButton!
+    
     var imagePicker = UIImagePickerController()
     var person : Contact? = nil
     

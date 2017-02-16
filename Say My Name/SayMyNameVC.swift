@@ -10,6 +10,7 @@ import UIKit
 
 class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
+    var sayMyNameTwo: SayMyNameTwoVC?
     
     @IBOutlet weak var personPicture: UIImageView!
 
@@ -19,8 +20,11 @@ class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
     var imagePicker = UIImagePickerController()
     var person : Contact? = nil
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         imagePicker.delegate = self
         
@@ -43,8 +47,13 @@ class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
         
     }
     
-    //Save contact
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sayMyNamSeg" {
+            self.sayMyNameTwo = segue.destination as? SayMyNameTwoVC
+        }
+    }
     
+
     @IBAction func smnButtonTapped(_ sender: Any) {
         
         //Save Contact
@@ -55,6 +64,8 @@ class SayMyNameVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
         
         person.image = UIImagePNGRepresentation(personPicture.image!) as NSData?
         person.name = personNameTextField.text
+        self.sayMyNameTwo?.savePerson(person: person)
+        
 
         
         //Clear fields

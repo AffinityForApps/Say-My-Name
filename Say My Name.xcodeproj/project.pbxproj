@@ -108,12 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				624805D01E31CFFC0094FC0E /* SayMyNameVC.swift */,
+				62AFFC051E51D1E0004B6C91 /* SayMyNameTwoVC.swift */,
 				624805EC1E31D2D20094FC0E /* SignUpInVC.swift */,
 				624805EE1E31D2FF0094FC0E /* WhatsMyNameVC.swift */,
 				624805F01E31D3140094FC0E /* ListVC.swift */,
 				624805F21E31D33D0094FC0E /* InfoVC.swift */,
 				62AFFC031E514B55004B6C91 /* InfoTwoVC.swift */,
-				62AFFC051E51D1E0004B6C91 /* SayMyNameTwoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

@@ -47,6 +47,50 @@ class SayMyNameTwoVC: UITableViewController, UITextViewDelegate, UITextFieldDele
        
     }
 
+    func savePerson(person: Contact){
+        
+        //save contact
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let person = Contact(context: context)
+        
+        person.phoneNumber = phoneNumberTextField.text
+        person.email = emailTextField.text
+        person.occupation = occupationTextField.text
+        person.employer = employerTextField.text
+        person.height = heightTextField.text
+        person.build = buildTextField.text
+        person.hairColor = hairColorTextField.text
+        person.gender = genderTextField.text
+        person.race = raceTextField.text
+        person.meetingPlace = meetingPlaceTextField.text
+        person.relatedContact = relatedContactTextField.text
+        person.spouse = spouseTextField.text
+        person.likes = likesTextView.text
+        person.dislikes = dislikesTextView.text
+        person.notes = notesTextView.text
+        
+        //clear fields
+        
+        phoneNumberTextField.text = ""
+        emailTextField.text = ""
+        occupationTextField.text = ""
+        employerTextField.text = ""
+        heightTextField.text = ""
+        buildTextField.text = ""
+        hairColorTextField.text = ""
+        genderTextField.text = ""
+        raceTextField.text = ""
+        meetingPlaceTextField.text = ""
+        relatedContactTextField.text = ""
+        spouseTextField.text = ""
+        likesTextView.text = ""
+        dislikesTextView.text = ""
+        notesTextView.text = ""
+
+        
+    }
     
 }
 
